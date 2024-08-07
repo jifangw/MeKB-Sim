@@ -26,8 +26,8 @@ actions, and MeKBs over time.
 
 Please create the necessary folders first
 
-`
-mkdir logs
-mkdir actions
-mkdir snapshot
-`
+```
+    mkdir logs
+    mkdir actions
+    mkdir snapshot
+```
