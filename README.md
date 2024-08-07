@@ -103,3 +103,25 @@ python show_actions.py
 Create a new vue project and replace the corresponding files in the new vue project with the two files under ***monitor_page-vue/src***  
 
 Then modify the ***backendServer*** in the ***main.js***
+
+#### 5. Start Simulation
+You can start ***tick*** with the buttons on the web client. You can also start with:
+```
+python tick.py
+```
+
+#### 6. Restart
+```
+rm -f snapshot/app.json
+rm -f actions/*
+```
+```
+drop database llm_account;
+drop database llm_game0001;
+create database `llm_game0001` default character set utf8mb4 collate utf8mb4_unicode_ci;
+create database `llm_account` default character set utf8mb4 collate utf8mb4_unicode_ci;
+```
+Then re-run
+```
+python main.py
+```
