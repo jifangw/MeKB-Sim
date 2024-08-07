@@ -1,4 +1,4 @@
-## MeKB-Sim: Personal Knowledge Base-Powered Multi-Agent Simulation 🌐
+# MeKB-Sim: Personal Knowledge Base-Powered Multi-Agent Simulation 🌐
 
 
 [![Paper](https://img.shields.io/badge/Paper-TODO-yellow)](todo)
@@ -20,3 +20,14 @@ actions, and MeKBs over time.
 
 
 [![MeKB-Sim demo front end](https://github.com/HITsz-TMG/MeKB-Sim/blob/main/front_end.png)](https://youtu.be/7F6oPaTW6kw)
+
+
+## Folder Creation
+
+Please create the necessary folders first
+
+`
+mkdir logs
+mkdir actions
+mkdir snapshot
+`
