@@ -45,7 +45,7 @@ create database `llm_game` default character set utf8mb4 collate utf8mb4_unicode
 create database `llm_game0001` default character set utf8mb4 collate utf8mb4_unicode_ci;
 create database `llm_game0002` default character set utf8mb4 collate utf8mb4_unicode_ci;
 ```
-In order to connect to mysql, you need to modify ***config/app.json.***
+In order to connect to mysql, you need to modify `config/app.json.`
 
 ### Install
 ```
@@ -64,7 +64,7 @@ main.py
 show_actions.py
 ```
 
-Besides, modify the contents marked with ***"// TODO"*** in ***client/Build/Builds.framework.js***
+Besides, modify the contents marked with ***"// TODO"*** in `client/Build/Builds.framework.js`
 
 ### Run
 #### 1. To start the demo backend, run
@@ -77,10 +77,10 @@ When you see
 ```
 The backend has been started successfully.
 
-#### 2. To start the unity webgl client, open ***client/index.html*** in your browser.
+#### 2. To start the unity webgl client, open `client/index.html` in your browser.
 a. Right-clicking the index.html in your python IDE and select open in browser.  
 
-b. Or in directory ***client***, run
+b. Or in directory `client`, run
 ```
 python -m http.server 7042 --bind 0.0.0.0
 ```
@@ -100,9 +100,9 @@ python show_actions.py
 ```
 
 #### 4. To start the Vue front-end of the monitoring page
-Create a new vue project and replace the corresponding files in the new vue project with the two files under ***monitor_page-vue/src***  
+Create a new vue project and replace the corresponding files in the new vue project with the two files under `monitor_page-vue/src`. 
 
-Then modify the ***backendServer*** in the ***main.js***
+Then modify the ***backendServer*** in the `main.js`
 
 #### 5. Start Simulation
 You can start ***tick*** with the buttons on the web client. You can also start with:
@@ -126,7 +126,7 @@ Then re-run
 python main.py
 ```
 
-## Citation
+## 🌈 Citation
 If you find MeKB-Sim useful for your research and applications, please cite using this BibTeX:
 ```
 
