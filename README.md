@@ -78,7 +78,8 @@ When you see
 The backend has been started successfully.
 
 #### 2. To start the unity webgl client, open ***client/index.html*** in your browser.
-a. Right-clicking the index.html in your python IDE and select open in browser.
+a. Right-clicking the index.html in your python IDE and select open in browser.  
+
 b. Or in directory ***client***, run
 ```
 python -m http.server 7042 --bind 0.0.0.0
@@ -99,5 +100,6 @@ python show_actions.py
 ```
 
 #### 4. To start the Vue front-end of the monitoring page
-Create a new vue project and replace the corresponding files in the new vue project with the two files under ***monitor_page-vue/src***
+Create a new vue project and replace the corresponding files in the new vue project with the two files under ***monitor_page-vue/src***  
+
 Then modify the ***backendServer*** in the ***main.js***
