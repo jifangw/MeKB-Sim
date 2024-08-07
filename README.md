@@ -22,7 +22,7 @@ actions, and MeKBs over time.
 [![MeKB-Sim demo front end](https://github.com/HITsz-TMG/MeKB-Sim/blob/main/front_end.png)](https://youtu.be/7F6oPaTW6kw)
 
 
-## Environment
+## 🌟 Environment
 
 ### Dependency
 ```
@@ -66,7 +66,7 @@ show_actions.py
 
 Besides, modify the contents marked with ***"// TODO"*** in ***client/Build/Builds.framework.js***
 
-### Run
+### ⚡️ Run
 #### 1. To start the demo backend, run
 ```
 python main.py
@@ -124,4 +124,10 @@ create database `llm_account` default character set utf8mb4 collate utf8mb4_unic
 Then re-run
 ```
 python main.py
+```
+
+## Citation
+If you find MeKB-Sim useful for your research and applications, please cite using this BibTeX:
+```
+
 ```
