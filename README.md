@@ -52,7 +52,7 @@ In order to connect to mysql, you need to modify ***config/app.json.***
 pip install -r requirements.txt
 ```
 
-## How to deploy your demo
+## ⚡️ How to deploy your demo
 
 ### Code Modification
 You need to modify the contents marked with ***"### TODO"*** in the following files
@@ -66,7 +66,7 @@ show_actions.py
 
 Besides, modify the contents marked with ***"// TODO"*** in ***client/Build/Builds.framework.js***
 
-### ⚡️ Run
+### Run
 #### 1. To start the demo backend, run
 ```
 python main.py
