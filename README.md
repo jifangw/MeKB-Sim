@@ -64,10 +64,10 @@ main.py
 show_actions.py
 ```
 
-Besides, modify the contents marked with ***// TODO*** in ***client/Build/Builds.framework.js***
+Besides, modify the contents marked with ***"// TODO"*** in ***client/Build/Builds.framework.js***
 
 ### Run
-#### To start the demo backend, run
+#### 1. To start the demo backend, run
 ```
 python main.py
 ```
@@ -77,10 +77,9 @@ When you see
 ```
 The backend has been started successfully.
 
-#### To start the unity webgl client, open ***client/index.html*** in your browser.
-1. Right-clicking the index.html in your python IDE and select open in browser.
-OR
-2. In directory ***client***, run
+#### 2. To start the unity webgl client, open ***client/index.html*** in your browser.
+a. Right-clicking the index.html in your python IDE and select open in browser.
+b. Or in directory ***client***, run
 ```
 python -m http.server 7042 --bind 0.0.0.0
 ```
@@ -88,12 +87,17 @@ Then visit the following address in your browser
 ```
 http://127.0.0.1:7042
 ```
+When you see
+```
+somebody linked.
+```
+The client has been started successfully.
 
-#### To start the backend of the monitoring page, run
+#### 3. To start the backend of the monitoring page, run
 ```
 python show_actions.py
 ```
 
-#### To start the Vue front-end of the monitoring page
+#### 4. To start the Vue front-end of the monitoring page
 Create a new vue project and replace the corresponding files in the new vue project with the two files under ***monitor_page-vue/src***
 Then modify the ***backendServer*** in the ***main.js***
