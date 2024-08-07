@@ -80,7 +80,7 @@ The backend has been started successfully.
 #### 2. To start the unity webgl client, open `client/index.html` in your browser.
 a. Right-clicking the index.html in your python IDE and select open in browser.  
 
-b. Or in directory `client`, run
+b. Or in directory ***client***, run
 ```
 python -m http.server 7042 --bind 0.0.0.0
 ```
