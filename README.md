@@ -22,12 +22,78 @@ actions, and MeKBs over time.
 [![MeKB-Sim demo front end](https://github.com/HITsz-TMG/MeKB-Sim/blob/main/front_end.png)](https://youtu.be/7F6oPaTW6kw)
 
 
-## Folder Creation
+## Environment
 
-Please create the necessary folders first
+### Dependency
+```
+python: 3.9.18
+mysql: 8.0.31
+node.js: 18.19.1
+```
 
+### Folder Creation
 ```
-    mkdir logs
-    mkdir actions
-    mkdir snapshot
+mkdir logs
+mkdir actions
+mkdir snapshot
 ```
+
+### Mysql Init
+```
+create database `llm_account` default character set utf8mb4 collate utf8mb4_unicode_ci;
+create database `llm_game` default character set utf8mb4 collate utf8mb4_unicode_ci;
+create database `llm_game0001` default character set utf8mb4 collate utf8mb4_unicode_ci;
+create database `llm_game0002` default character set utf8mb4 collate utf8mb4_unicode_ci;
+```
+In order to connect to mysql, you need to modify ***config/app.json.***
+
+### Install
+```
+pip install -r requirements.txt
+```
+
+## How to deploy your demo
+
+### Code Modification
+You need to modify the contents marked with ***"### TODO"*** in the following files
+```
+agent/agent/agent.py
+agent/utils/llmExpends/gpt4.py
+agent/utils/llmExpends/gpt35.py
+main.py
+show_actions.py
+```
+
+Besides, modify the contents marked with ***// TODO*** in ***client/Build/Builds.framework.js***
+
+### Run
+#### To start the demo backend, run
+```
+python main.py
+```
+When you see
+```
+--------Server Started--------
+```
+The backend has been started successfully.
+
+#### To start the unity webgl client, open ***client/index.html*** in your browser.
+1. Right-clicking the index.html in your python IDE and select open in browser.
+OR
+2. In directory ***client***, run
+```
+python -m http.server 7042 --bind 0.0.0.0
+```
+Then visit the following address in your browser
+```
+http://127.0.0.1:7042
+```
+
+#### To start the backend of the monitoring page, run
+```
+python show_actions.py
+```
+
+#### To start the Vue front-end of the monitoring page
+Create a new vue project and replace the corresponding files in the new vue project with the two files under ***monitor_page-vue/src***
+Then modify the ***backendServer*** in the ***main.js***
